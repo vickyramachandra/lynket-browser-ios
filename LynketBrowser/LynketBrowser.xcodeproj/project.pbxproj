@@ -13,9 +13,11 @@
 		1DA445CD2078F72300D82461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA445CB2078F72300D82461 /* Main.storyboard */; };
 		1DA445CF2078F72300D82461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA445CE2078F72300D82461 /* Assets.xcassets */; };
 		1DA445D22078F72300D82461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA445D02078F72300D82461 /* LaunchScreen.storyboard */; };
+		B4D1C7C226B620947E490A52 /* Pods_LynketBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F90368E569ED14213FD16DAE /* Pods_LynketBrowser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028D7AA966BA3663A0E1DC76 /* Pods-LynketBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynketBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynketBrowser/Pods-LynketBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		1DA445C22078F72300D82461 /* LynketBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynketBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA445C52078F72300D82461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DA445C72078F72300D82461 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		1DA445CE2078F72300D82461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA445D12078F72300D82461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA445D32078F72300D82461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487719135DECE7782C19454B /* Pods-LynketBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynketBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynketBrowser/Pods-LynketBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		F90368E569ED14213FD16DAE /* Pods_LynketBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynketBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D1C7C226B620947E490A52 /* Pods_LynketBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047FAF2C02F8662A63DA6C4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				487719135DECE7782C19454B /* Pods-LynketBrowser.debug.xcconfig */,
+				028D7AA966BA3663A0E1DC76 /* Pods-LynketBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1DA445B92078F72300D82461 = {
 			isa = PBXGroup;
 			children = (
 				1DA445C42078F72300D82461 /* LynketBrowser */,
 				1DA445C32078F72300D82461 /* Products */,
+				047FAF2C02F8662A63DA6C4E /* Pods */,
+				3F1FB4B0074255CB66F02466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = LynketBrowser;
 			sourceTree = "<group>";
 		};
+		3F1FB4B0074255CB66F02466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F90368E569ED14213FD16DAE /* Pods_LynketBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DA445D62078F72300D82461 /* Build configuration list for PBXNativeTarget "LynketBrowser" */;
 			buildPhases = (
+				24B95F3288F864A8A80D7592 /* [CP] Check Pods Manifest.lock */,
 				1DA445BE2078F72300D82461 /* Sources */,
 				1DA445BF2078F72300D82461 /* Frameworks */,
 				1DA445C02078F72300D82461 /* Resources */,
+				A4D23A99FFD09229F9DE0FD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B95F3288F864A8A80D7592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LynketBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D23A99FFD09229F9DE0FD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LynketBrowser/Pods-LynketBrowser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynketBrowser/Pods-LynketBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1DA445BE2078F72300D82461 /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		1DA445D72078F72300D82461 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487719135DECE7782C19454B /* Pods-LynketBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -292,6 +368,7 @@
 		};
 		1DA445D82078F72300D82461 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 028D7AA966BA3663A0E1DC76 /* Pods-LynketBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

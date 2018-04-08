@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Podfile">
+      location = "group:LynketBrowser.xcodeproj">
    </FileRef>
    <FileRef
-      location = "self:LynketBrowser.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
